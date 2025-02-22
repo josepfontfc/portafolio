@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Os presento mi portafolio, en el podéis encontrar las mejores webs hechas por mi"
+    />
+    <meta name="Author" content="Josep" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Encabezado de la página -->
+    <header>
+      <nav class="navbar">
+        <!-- Botón para menú hamburguesa -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Título o logotipo del portafolio -->
+        <div class="logo">Portafolio</div>
+
+        <!-- Menú de navegación -->
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#about" data-target="about">About</a></li>
+          <li>
+            <a href="#habilidades" data-target="habilidades">Habilidades</a>
+          </li>
+          <li><a href="#proyectos" data-target="proyectos">Proyectos</a></li>
+          <li><a href="#contacto" data-target="contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de inicio o presentación -->
+    <div class="home">
+      <div class="home_text">Mi nombre es Josep Font</div>
+      <div class="home_text_description">
+        Me gusta hacer páginas web y la tecnología en general
+      </div>
+    </div>
+
+    <!-- Sección "About" -->
+    <div class="about">
+      <div class="foto_about_2">
+        <img src="img/img_about.jpg" alt="about_2" class="foto-about-2" />
+      </div>
+      <!-- Descripción del desarrollador -->
+      <div class="about_text">
+        Soy un desarrollador web que tiene proyectos de aprendizaje <br />
+        usando tecnologías front-end.
+        <br /><br />
+        Actualmente estoy ampliando mi formación hacia el desarrollo<br />
+        full-stack, aprendiendo tecnologías de back-end.
+      </div>
+      <!-- Lugar para una imagen de perfil -->
+      <div class="foto-perfil">
+        <img src="img/foto_perfil.jpg" alt="foto-perfil" class="foto_perfil" />
+      </div>
+    </div>
+    <!-- Sección de habilidades -->
+    <div class="habilidades">
+      <div class="titulo_habilidades">Habilidades</div>
+      <div class="texto_habilidades">
+        <!-- Habilidades de front-end -->
+        <div class="columna_front_end">
+          <div class="habilidades_front_end">
+            <div class="titulo_front_end">Front end</div>
+
+            <div class="contenedor_nivel_avanzado_fe">
+              <div class="habilidades_avanzadas">Nivel avanzado</div>
+              <div class="boton_html">html</div>
+              <div class="boton_css">css</div>
+            </div>
+            <div class="contenedor_nivel_intermedio_fe">
+              <div class="habilidades_intermedias">Nivel intermedio</div>
+              <div class="boton_css">css</div>
+              <div class="boton_js">Javascript</div>
+            </div>
+            <div class="contenedor_nivel_basico_fe">
+              <div class="habilidades_basicas">Nivel básico</div>
+              <div class="boton_react">Reactjs</div>
+            </div>
+          </div>
+        </div>
+        <!-- Habilidades de back-end -->
+        <div class="habilidades_back_end">
+          <div class="titulo_back_end">Back end</div>
+
+          <div class="contenedor_nivel_avanzado_be">
+            <div class="habilidades_avanzadas_be">Nivel intermedio</div>
+            <div class="boton_sql">sql</div>
+            <div class="boton_sql">Node.js</div>
+          </div>
+          <div class="contenedor_nivel_intermedio_be">
+            <div class="habilidades_intermedias_be">Nivel básico</div>
+            <div class="boton_sql">sql</div>
+          </div>
+          <div class="contenedor_nivel_basico_be">
+            <div class="habilidades_basicas_be">En aprendizaje</div>
+            <div class="boton_sql">Python</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de proyectos -->
+
+    <div class="proyectos">
+      <div class="proyectos_titulo">Proyectos</div>
+      <div class="contenedor_proyectos">
+        <div class="contenedor_proyecto_pizzeria">
+          <div class="titulo_pizzeria">Pizzeria</div>
+
+          <a href="pizzeria/index.html" target="_blank">
+            <img
+              src="img/foto_pizzeria.jpg"
+              alt="web pizzería"
+              title="pizzería"
+              class="imagen_pizzeria"
+            />
+          </a>
+          <div class="tecnologias_pizzeria">
+            Web de una pizzeria hecha con html , css y js.
+          </div>
+        </div>
+
+        <div class="contenedor_proyecto_hotel">
+          <div class="titulo_hotel">Hotel</div>
+
+          <a href="" target="_blank">
+            <img
+              src="img/foto_hotel.jpg"
+              alt="web hotel"
+              title="hotel"
+              class="imagen_hotel"
+            />
+          </a>
+          <div class="tecnologias_hotel">Web de un hotel hecha con React</div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección de contacto -->
+    <div class="contacto">
+      <div class="contacto-email">
+        Puedes contactar conmigo en el siguiente e-mail:
+        <br />
+        <div class="direccion-email">josepfontfc@gmail.com</div>
+      </div>
+      <div class="contacto-redes">
+        Link a mi github y a mi linkedin:
+        <br />
+        <a href="https://www.linkedin.com/in/josep-font-carbonell-15a633349/" target="_blank" class="link-profile"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/josepfontfc" target="_blank" class="link-profile"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+      Josep Font | &copy;2025 | Todos los derechos reservados
+    </div>
+    <a href="#" id="back-to-top" class="back-to-top">&uarr;</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

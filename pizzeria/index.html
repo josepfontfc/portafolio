@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Esta es una web hecha por mi simulando una pizzeria"
+    />
+    <meta name="Author" content="Josep" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web pizzeria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Encabezado de la página -->
+    <div class="header">
+      <h1>Pizzeria</h1>
+      <img src="img/logo-pizzeria.png" alt="logo" class="logo-pizzeria" />
+    </div>
+    <nav class="navbar">
+      <!-- Icono del menú hamburguesa -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Menú de navegación -->
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <!--Sección de hero -->
+    <div class="hero">
+      <div class="titulo">
+        <h2>
+          <span class="marron">Pizze</span><span class="orange">ria </span>
+        </h2>
+      </div>
+      <div class="description">Una de las mejores pizzerias de Mallorca</div>
+    </div>
+    <!-- Sección foto con explicación del premio -->
+    <div class="texto-historia">
+      <div class="texto-imagen">
+        Nuestra historia nos avala , hemos conseguido el premio a la mejor pizza
+        del 2020.
+      </div>
+    </div>
+    <!-- Sección donde esta el efecto de maquina de escribir -->
+    <div class="contenedor-servicios">
+      <div class="text"></div>
+    </div>
+    <!-- Sección donde se encuentra el menu con sus diferentes pizzas -->
+    <div class="contenedor-carta-principal">
+      <div class="contenedor-carta">
+        <div class="explicacion-carta">
+          En nuestra carta puedes encontrar pizzas pequeñas , medianas o grandes
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-flip">
+      <div class="contenedor-flip-cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/imagen1.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza Margarita</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/pizza-2.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza 4 quesos</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/pizza-3.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza Frutti di mare</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-flip-cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/pizza-4.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza Napolitana</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/pizza-5.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza Prosciutto</h1>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="img/pizza-6.jpg"
+                alt="Avatar"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Pizza Diabola</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección donde esta el contenedor que habla de su pizza estrella -->
+    <div class="contenedor-pizza-estrella">
+      <div class="texto-pizza-estrella">
+        Ven a probar nuestra pizza estrella Baleares con el auténtico sabor de
+        Italia<button class="boton-pizza-estrella">Saber más</button>
+      </div>
+      <img
+        src="img/pizza-estrella.jpg"
+        alt="pizza estrella"
+        class="pizza-estrella"
+      />
+    </div>
+    <div class="descripcion-pizza-estrella">
+      Nuestra pizza estrella esta hecha con ingrendientes de gran calidad y
+      frescos , ven a disfrutarla por un precio muy económico. Es la pizza que
+      recomendamos a nuestros clientes.
+    </div>
+    <!-- Pie de página -->
+    <div class="footer">
+      <ul class="columna-1-footer">
+        <li class="titulo-columna-1">Redes sociales</li>
+        <li>
+          <i class="fab fa-facebook"></i>
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+        </li>
+        <li></li>
+      </ul>
+      <ul class="columna-2-footer">
+        <li class="titulo-columna-2">Información</li>
+        <li>Política de cookies</li>
+        <li>Política de privacidad</li>
+        <li>Aviso legal</li>
+      </ul>
+      <ul class="columna-3-footer">
+        <li class="titulo-columna-3">Contacto</li>
+        <li>Pizzeria</li>
+        <li>Calle ficticia , número , codigo postal , Mallorca</li>
+        <li>Teléfono : 971 XXX XXX</li>
+        <li>mail: pizzeria@pizzeria.es</li>
+      </ul>
+    </div>
+
+    <!--Script para que funcione el efecto de animación de la sección de hero-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

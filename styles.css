@@ -1,0 +1,779 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto/Roboto-Black.ttf);
+}
+
+body {
+  font-family: Roboto;
+}
+
+/* Estilo del botón "back-to-top" para desplazarse al inicio de la página */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(17, 105, 228, 0.533);
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Aparece el botón cuando tiene la clase "active" */
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: rgba(11, 65, 141, 0.533);
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(15, 15, 15, 0.5);
+}
+
+/* Menú de navegación */
+.menu {
+  list-style: none;
+  display: flex;
+  padding-right: 50px;
+  gap: 20px;
+}
+
+.logo {
+  padding-left: 50px;
+  color: white;
+  font-family: Montserrat;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+  padding: 10px;
+  width: 120px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3px;
+  font-family: Montserrat;
+}
+
+/* Ícono de menú para pantallas pequeñas */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* Líneas del ícono de menú */
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Sección principal "home" con una imagen de fondo */
+
+.home {
+  padding: 100px;
+  background: url(img/img_home.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+}
+
+/* Texto principal dentro de la sección "home" */
+
+.home_text {
+  padding-left: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+
+/* Descripción dentro de la sección "home" */
+
+.home_text_description {
+  padding-left: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  line-height: 50px;
+  font-family: Montserrat;
+}
+
+/* Sección "about"  */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.foto-about-2 {
+  border-radius: 50%;
+}
+
+/* Estilo del texto de la sección "about" */
+
+.about_text {
+  background-color: rgba(3, 35, 91, 0.2);
+  padding: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 20px 20px 50px 10px rgb(22, 121, 179) inset;
+}
+
+
+.foto_perfil{
+
+  border-radius: 5px;
+  height: 100%;
+  width:100%;
+  object-fit: contain;
+}
+
+/* Sección de habilidades con fondo translúcido */
+
+.habilidades {
+  background-color: rgba(13, 105, 233, 0.3);
+}
+
+.titulo_front_end {
+  margin-left: 200px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  border: 4px solid rgb(16, 16, 16);
+}
+
+.habilidades_avanzadas {
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.habilidades_intermedias {
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.habilidades_basicas {
+  margin-top: 20px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  margin-right: 65px;
+  background-color: white;
+  margin-right: 150px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.boton_html {
+  width: 70px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.boton_css {
+  margin: 0px 30px;
+  width: 70px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.boton_js {
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.boton_react {
+  margin-top: 20px;
+  width: 70px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.contenedor_nivel_avanzado_fe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor_nivel_intermedio_fe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor_nivel_basico_fe {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.habilidades_back_end {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_back_end {
+  margin-left: 200px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+  border: 4px solid rgb(16, 16, 16);
+}
+
+.habilidades_avanzadas_be {
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.habilidades_intermedias_be {
+  margin-top: 20px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  margin-right: 70px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.habilidades_basicas_be {
+  margin-top: 20px;
+  width: 100px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  margin-right: 70px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.boton_sql {
+  margin-top: 25px;
+  width: 70px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.contenedor_nivel_avanzado_be {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor_nivel_intermedio_be {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor_nivel_basico_be {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo_habilidades {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+.texto_habilidades {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+/* Sección de los proyectos hechos por mi */
+
+.proyectos {
+  margin-top: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 49, 219, 0.408),
+    rgba(3, 35, 91, 0.2)
+  );
+}
+
+.proyectos_titulo {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+
+.contenedor_proyectos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedor_proyecto_pizzeria {
+  padding: 20px;
+}
+
+.titulo_pizzeria {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contenedor_proyecto_hotel {
+  padding: 20px;
+}
+.titulo_hotel {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Sección de contacto del portafolio*/
+
+.contacto {
+  padding: 70px;
+
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto-email {
+  width: 45%;
+  padding: 30px;
+  background: linear-gradient(
+    to right,
+    rgba(17, 190, 193, 0.408),
+    rgba(3, 46, 99, 0.649)
+  );
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+}
+.direccion-email {
+  padding: 10px;
+}
+
+.contacto-redes {
+  width: 45%;
+  padding: 30px;
+  background: linear-gradient(
+    to left,
+    rgba(17, 190, 193, 0.408),
+    rgba(3, 46, 99, 0.649)
+  );
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+}
+/* Estilos para los iconos*/
+.link-profile{
+color:white;
+}
+.fa-linkedin {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.fa-github {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.fa-linkedin:hover {
+  font-size: 30px;
+}
+
+.fa-github:hover {
+  font-size: 30px;
+}
+
+.footer {
+  font-size: 30px;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(14, 14, 14, 0.8);
+}
+
+/* Tablets estándar (vertical) */
+@media (min-width: 600px) and (max-width: 900px) {
+  /* Estilo general del menú */
+  .menu {
+    gap: 5px; /* Espaciado entre elementos del menú */
+  }
+
+  /* Logo en tablets */
+  .logo {
+    padding-left: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: Montserrat;
+  }
+
+  /* Enlaces de la barra de navegación */
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 11px; /* Tamaño reducido para tablets */
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+    font-family: Montserrat;
+  }
+
+  /* Sección Home */
+  .home {
+    padding: 50px;
+    background-attachment: scroll;
+  }
+  .home_text_description {
+    line-height: 30px;
+  }
+
+  /* Sección About */
+  .about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about_text {
+    background-color: rgba(3, 35, 91, 0.2);
+    padding: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 20px 20px 50px 10px rgb(22, 121, 179) inset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Habilidades y Proyectos */
+
+  .texto_habilidades {
+    flex-direction: column; /* Columnas para habilidades */
+    padding: 20px;
+    width: 100%;
+
+    overflow-x: auto; /* Habilitar desplazamiento horizontal */
+  }
+
+  .habilidades_back_end {
+    margin-top: 25px;
+  }
+  .contenedor_proyectos {
+    flex-direction: column;
+  }
+
+  /* Contacto */
+
+  .contacto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .contacto-email {
+    padding: 10px;
+    width: 90%;
+
+    word-wrap: break-word;
+  }
+
+  .contacto-redes {
+    padding: 10px;
+    width: 90%;
+  }
+}
+
+/* Tablets grandes (horizontal) */
+@media (min-width: 900px) and (max-width: 1200px) {
+  /* Enlaces de la barra de navegación */
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px; /* Mayor tamaño para pantallas grandes */
+    padding: 10px;
+    width: 110px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 3px;
+    font-family: Montserrat;
+  }
+
+  .home {
+    padding: 50px;
+    background-attachment: scroll;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .about_text {
+    background-color: rgba(3, 35, 91, 0.2);
+    padding: 70px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 20px 20px 50px 10px rgb(22, 121, 179) inset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para móviles */
+
+@media (max-width: 480px) {
+  /* Menú móvil */
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.727);
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    z-index: 9999;
+  }
+
+  .menu li {
+    margin: 0.5rem 0; /* Margen entre elementos */
+  }
+
+  .menu.show {
+    display: flex; /* Mostrar menú cuando esté activo */
+    z-index: 9;
+  }
+
+  .menu-toggle {
+    display: flex; /* Mostrar icono en dispositivos móviles */
+  }
+  .navbar {
+    justify-content: left;
+    padding-left: 10px;
+  }
+
+  /* Animación del ícono hamburguesa */
+  .menu-toggle.active span:nth-child(1) {
+    z-index: 10;
+    transform: rotate(45deg) translate(0, 0);
+    width: 65px;
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    z-index: 10;
+    transform: rotate(-45deg) translate(0, 0);
+    width: 65px;
+  }
+
+  /*Sección home*/
+
+  .home {
+    padding: 50px;
+    background-attachment: scroll;
+  }
+  .home_text {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .home_text_description {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 50px;
+
+    line-height: 30px;
+  }
+
+  /*Seccion about*/
+  .about {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .foto-about-2 {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .about_text {
+    background-color: rgba(3, 35, 91, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    box-shadow: 10px 10px 30px 10px rgb(22, 121, 179) inset;
+  }
+
+  .texto_habilidades {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+
+    overflow-x: auto;
+  }
+  .foto-perfil{
+
+    margin-top:20px;
+  }
+  .habilidades {
+    background-color: rgba(13, 105, 233, 0.3);
+  }
+  .columna_front_end {
+    margin-left: 50px;
+  }
+  .habilidades_back_end {
+    margin-top: 25px;
+  }
+  .contenedor_proyectos {
+    flex-direction: column; /* Proyectos uno debajo del otro */
+  }
+
+  /* Imagen adaptada seccion proyectos */
+  .imagen_pizzeria {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  /* Imegen  adaptada seccion proyectos */
+  .imagen_hotel {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .contacto {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .contacto-email {
+    padding: 10px;
+    width: 90%;
+
+    word-wrap: break-word;
+  }
+
+  .direccion-email {
+    width: 100%;
+  }
+  .contacto-redes {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .footer{
+
+    font-size: 20px;
+  }
+}
