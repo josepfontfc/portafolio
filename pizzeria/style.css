@@ -134,12 +134,15 @@ h2 {
 }
 .texto-imagen {
   font-weight: bold;
-  color: black;
+  color: rgb(250, 250, 247);
   font-size: 35px;
   font-family: roboto;
   margin: 40px;
   text-align: center;
   transform: translateY(100px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding:10px;
+  border-radius: 5px;
 }
 .imagen-servicios {
   width: 10%;
